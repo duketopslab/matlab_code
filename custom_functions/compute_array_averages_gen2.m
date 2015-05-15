@@ -34,13 +34,7 @@ for j= 1:8
     
     if(~isempty(runtot))
         
-        if strcmp(avg_type,'mid')
-            middle_point = [j runtot(round(median(1:repeats)),2:end) std(runtot(:,2:end))];
-            avgs = [avgs; middle_point];
-        else
-            avg = [mean(runtot) std(runtot(:,2:end))];
-            avgs = [avgs;avg];
-        end
+%something else
         runtot=[];
     end
 end
